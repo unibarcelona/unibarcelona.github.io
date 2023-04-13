@@ -60,8 +60,7 @@ function startScanner() {
   });
   Instascan.Camera.getCameras().then(function(cameras) {
 	if (cameras.length > 0) {
-	const selectedCamera = cameras[cameras.length - 1];
-    scanner.start(selectedCamera);
+    scanner.start(-1);
 	} else {
 	  console.error('No cameras found.');
 	}
