@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Scanner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <!-- Import Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Import Material Design styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Import your own CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2> Escàner de codis QR per la XVII Fira d'Empreses de la UB</h2>
+  
+  <div id="description">
+  <p>Primer, configura el teu nom i correu, així rebràs una còpia del CV de cada alumne que escanegis.</p>
+  </div>
+  <div id="contact-form">
+    <label for="contact-name">Nom i cognoms:</label>
+    <input type="text" id="contact-name" required>
+    <label for="contact-email">Correu:</label>
+    <input type="email" id="contact-email" required>
+    <button id="save-contact">Guarda!</button>
+    <button id="delete-contact">Esborra</button>
+  </div>
+  <p>Després, simplement conceideix permisos de càmera a l'aplicació i a capturar QRs!</p>
+
+  <div id="scanner">
+    <video id="preview"></video>
+    <div id="message" style="display: none;">Us hem enviat un correu a la vostra direcció amb l'enllaç al CV. El podeu descarregar aquí: <a target="_blank" id="student-cv" href="">Currículum Vitae</a></div>
+    <button id="restart-scanner" style="display: none;">Escaneja un altre CV</button>
+  </div>
+  <small><b>Nota:</b> pots capturar els QRs amb una aplicació al teu telèfon, però no rebràs l'enllaç al correu per que no es perdi cap CV.</small>
+  <script src="scripts.js"></script>
+</body>
+</html>
