@@ -13,27 +13,27 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h2> Escàner de codis QR per la XVII Fira d'Empreses de la UB</h2>
+  <h2><hr/>XVII Fira d'Empreses de la UB</h2>
   
   <div id="description">
-  <p>Primer, configura el teu nom i correu, així rebràs una còpia del CV de cada alumne que escanegis.</p>
+  <p>Configure your name and email, so you will receive a copy of the CV of each student you scan.</p>
   </div>
   <div id="contact-form">
-    <label for="contact-name">Nom empresa:</label>
+    <label for="contact-name">Company Name:</label>
     <input type="text" id="contact-name" required>
-    <label for="contact-email">Correu:</label>
+    <label for="contact-email">email:</label>
     <input type="email" id="contact-email" required>
-    <button id="save-contact">Guarda!</button>
-    <button id="delete-contact">Esborra</button>
+    <button id="save-contact">Save</button>
+    <button id="delete-contact">Delete</button>
   </div>
-  <p>Després, simplement conceideix permisos de càmera a l'aplicació i a capturar QRs!</p>
+  <p>Then simply grant camera permissions to the app and capture QRs!</p>
 
   <div id="scanner">
     <video id="preview"></video>
-    <div id="message" style="display: none;">Us hem enviat un correu a la vostra direcció amb l'enllaç al CV. El podeu descarregar aquí: <a target="_blank" id="student-cv" href="">Currículum Vitae</a></div>
-    <button id="restart-scanner" style="display: none;">Escaneja un altre CV</button>
+    <div id="message" style="display: none;">We have sent you an email to your address with the link to the CV. You can download it here: <a target="_blank" id="student-cv" href="">Curriculum Vitae</a></div>
+    <button id="restart-scanner" style="display: none;">Scan another CV</button>
   </div>
-  <small><b>Nota:</b> pots capturar els QRs amb una aplicació al teu telèfon, però no rebràs l'enllaç al correu per que no es perdi cap CV.</small>
+  <small><b>Note:</b> you can capture the QRs with an app on your phone, but you won't receive the link with the CV in the email.</small>
   <script src="scripts.js"></script>
 </body>
 </html>
